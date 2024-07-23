@@ -104,9 +104,12 @@ spring.servlet.multipart.max-request-size=100MB
 
 ## 构建和运行
 用IDEA导入Maven工程，使用Maven构建，安装依赖和构建环境
-进入src/main/java/com/cn/demo 运行DemoApplication，启动服务，默认监听端口8000
+进入`src/main/java/com/cn/demo 运行DemoApplication`，启动服务，默认监听端口8000
 
 ## API 文档
+生成符合条件的CSV文件
+- 进入`src/main/java/com/cn/demo/controler/GenerateCsv.java`,运行main方法生成1000000行的csv文件
+
 导入游戏销售数据
 - URL: `http://127.0.0.1:8000/import`
 - 方法: `POST`
