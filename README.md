@@ -12,7 +12,6 @@ Game Sales API 是一个基于 Spring Boot 和 JdbcTemplate 的 RESTful 服务�
 - [环境配置](#环境配置)
 - [构建和运行](#构建和运行)
 - [API 文档](#api-文档)
-- [示例请求](#示例请求)
 
 ## 技术栈
 
