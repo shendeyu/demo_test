@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.demo.dao.GameSalesMapper">
+    <select id="getGameSales" resultMap="gameSalesResultMap">
+        SELECT * FROM game_sales
+        <where>
+            <if test="startDate != null and endDate != null">
+                AND date_of_sale BETWEEN #{startDate} AND #{endDate}
+            </if>
+            <if test="salePrice != null">
+                AND sale_price &lt; #{salePrice}
+            </if>
+        </where>
+        LIMIT #{offset}, #{limit}
+    </select>
+
+
+
+</mapper>
